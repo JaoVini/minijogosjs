@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #lamp{
+            height: 400px;
+            width: 400px;
+            font-size: 2px;
+        }
+
+        div{
+            position: absolute;
+            margin-left: 500px;
+        }
+
+        #botoes{
+            padding: 50px;
+            margin-left: 90px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img src="on.png" alt="Lâmpada" id="lamp">
+    <form>
+        <div id="botoes">
+        <input type="button" value=" ON " onclick="on()">
+        <input type="button" value=" OFF " onclick="off()">
+        <input type="button" value=" Blink " onclick="blink()">
+        </div>
+    </div>
+    </form>
+    <script src="controle.js"></script>
+</body>
+</html>
